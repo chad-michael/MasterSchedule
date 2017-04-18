@@ -1,0 +1,404 @@
+/* DELTA COLLEGE MASTER AND HOME PAGE STYLES */
+
+body {
+	 background:#d6d6e1;
+	 font-family:Arial, Verdana;
+	 color:#2d2d2d;
+	 font-size:62.5%;
+	 font-size:11pt;
+}
+a:link, a:visited {
+	 color:#025239;
+	 text-decoration:none;
+}
+a:hover {
+	 color:#484878;
+	 text-decoration:underline;
+}
+ol, ul {
+	margin-left:20px;
+}
+#pagewrapper {
+	 margin:0 auto;
+	 width:1006px;
+}
+
+/* HEADER AREA */
+#headerwrapper {
+	 background:url('../images/main_headerbg.jpg') no-repeat 0 0;
+	 height:88px;
+}
+#mainlogo {
+	 float:left;
+	 padding:24px 0 0 32px;
+}
+#mainlogo span {
+	 text-indent:-9999px;	
+	 display:none;
+}
+#header_toplinks {
+	 float:right;
+	 font-size:8pt;
+	 padding:25px 25px 0 0;
+}
+#header_toplinks a:link, 
+#header_toplinks a:visited {
+	 color:#000;
+	 font-weight:bold;
+	 padding:0 8px;
+}
+#searcharea {
+	float:right;
+	font-size:9pt;
+	padding:15px 30px 0 0;
+}
+#searcharea select,
+#searcharea .searchbox {
+	font-size:8pt;
+	width:160px;
+}
+#searcharea .searchbox {
+	padding-left:5px;
+}
+#searcharea .searchButton {
+	height:19px;
+	vertical-align:top;
+}
+/* MAIN TOP NAVIGATION */
+#gnav {	 
+	 width:1006px;
+	 height:33px;         
+	 background:url('../images/deltaglobalnav.gif') no-repeat 0 0;
+}
+#gnav ul {
+	 list-style-type:none;	
+	 width:790px;
+	 height:33px;	 
+	 margin-left:94px;
+	 overflow:hidden;	
+	 position:relative; 
+}
+#gnav li {	  
+	 letter-spacing:0;
+}
+#gnav li a:link,
+#gnav li a:visited {
+	 position:absolute;	
+	 top:0;
+	 height:33px;
+	 display:block;
+	 color:#ffffff;	
+	 text-indent:-9999px;
+	 overflow:hidden; 
+}
+#gnav li#search a:link,
+#gnav li#search a:visited {
+	 width:145px;         
+	 background:url('/images/system/deltaglobalnav.gif') no-repeat -94px 0;	 
+	 left:0;
+}
+#gnav li#search a:hover {	
+	 background:url('/images/system/deltaglobalnav.gif') no-repeat -94px -33px;
+}
+#gnav li#view a:link,
+#gnav li#view a:visited {
+	 width:152px;
+	 background:url('/images/system/deltaglobalnav.gif') no-repeat -239px 0;
+	 left:145px;
+}
+#gnav li#view a:hover {	 
+	 background:url('/images/system/deltaglobalnav.gif') no-repeat -239px -33px;	 
+}
+#gnav li#admissions a:link,
+#gnav li#admissions a:visited {
+	 width:180px;
+	 background:url('/images/system/deltaglobalnav.gif') no-repeat -391px 0;
+	 left:297px;
+}
+#gnav li#admissions a:hover {	
+	 background:url('/images/system/deltaglobalnav.gif') no-repeat -391px -33px;	
+}
+#gnav li#financial a:link,
+#gnav li#financial a:visited {
+	 width:159px;
+	 background:url('/images/system/deltaglobalnav.gif') no-repeat -571px 0;
+	 left:477px;
+}
+#gnav li#financial a:hover {	
+	 background:url('/images/system/deltaglobalnav.gif') no-repeat -571px -33px;	 
+}
+#gnav li#personalized a:link,
+#gnav li#personalized a:visited  {
+	 width:154px;
+	 background:url('/images/system/deltaglobalnav.gif') no-repeat -730px 0;
+	 left:636px;
+}
+#gnav li#personalized a:hover {	 
+	 background:url('/images/system/deltaglobalnav.gif') no-repeat -730px -33px;	 
+}
+
+/* AUDIENCE NAV AREA */
+#audiencebar {
+	 height:79px;
+	 width:1006px;
+	 background:url('/images/system/landingbarbg.gif') no-repeat 0 0;
+	 padding:10px 0 0 19px;
+}
+#aud_top,#aud_bot {
+	width:700px;
+	height:34px;
+	float:left;
+	vertical-align:bottom;
+	margin-bottom:3px;
+}
+#aud_bot {}
+#audiencebar #aud_top ul,
+#audiencebar #aud_bot ul {
+	list-style:none;
+	display:inline;
+}
+#audiencebar #aud_top li,
+#audiencebar #aud_bot li {
+	float:left;
+	vertical-align:bottom;
+}
+#audiencebar li a:link,
+#audiencebar li a:visited {
+	 color:#000;
+	 font-size:10pt;
+	 width:154px;
+	 height:24px;
+	 margin:0 3px 0 0;
+	 display:block;
+	 padding:10px 0 0 45px;
+	 font-weight:bold;
+	 vertical-align:bottom;
+}
+#audiencebar li#future a:link,
+#audiencebar li#future a:visited {
+	 background:url('/images/system/aud_future.gif') no-repeat 0 0;	
+	 text-decoration:none;
+}
+#audiencebar li#future a:hover {
+	background:url('/images/system/aud_future.gif') no-repeat 0 -34px;	
+}
+#audiencebar li#parents a:link,
+#audiencebar li#parents a:visited {
+	 background:url('/images/system/aud_parents.gif') no-repeat 0 0;	
+	 text-decoration:none;
+}
+#audiencebar li#parents a:hover {
+	background:url('/images/system/aud_parents.gif') no-repeat 0 -34px;	
+}
+#audiencebar li#business a:link,
+#audiencebar li#business a:visited {
+	 background:url('/images/system/aud_business.gif') no-repeat 0 0;	
+	 text-decoration:none;
+}
+#audiencebar li#business a:hover {
+	background:url('/images/system/aud_business.gif') no-repeat 0 -34px;	
+}
+#audiencebar li#current a:link,
+#audiencebar li#current a:visited {
+	 background:url('/images/system/aud_current.gif') no-repeat 0 0;	
+	 text-decoration:none;
+}
+#audiencebar li#current a:hover {
+	background:url('/images/system/aud_current.gif') no-repeat 0 -34px;	
+}
+#audiencebar li#alumni a:link,
+#audiencebar li#alumni a:visited {
+	 background:url('/images/system/aud_alumni.gif') no-repeat 0 0;	
+	 text-decoration:none;
+}
+#audiencebar li#alumni a:hover {
+	background:url('/images/system/aud_alumni.gif') no-repeat 0 -34px;	
+}
+#audiencebar li#community a:link,
+#audiencebar li#community a:visited {
+	 background:url('/images/system/aud_community.gif') no-repeat 0 0;	
+	 text-decoration:none;
+}
+#audiencebar li#community a:hover {
+	background:url('/images/system/aud_community.gif') no-repeat 0 -34px;	
+}
+
+/* MAIN CONTENT AREA ON HOME PAGE */
+#homecontentarea {
+	background:#fff2e5 url('/images/system/home_branding_bg.gif') repeat-y 0 0;
+}
+#left_content {
+	float:left;
+	width:712px; /* 724 minus 12 padding */
+	padding-left:12px;
+}
+#brandingarea {
+	height:458px;
+	background-color:#ffffff;
+}
+#whatshappening {
+	height:171px;
+	width:696px;
+	padding-left:15px;
+	background:#fff2e5;
+}
+* html #whatshappening {margin-top:-3px;} /* fixes ie 3 pixel bug */
+#whatshappening h1 {
+	font-size:18pt;
+	height:52px;
+	float:left;
+	margin-right:20px;
+	background:url('/images/system/whatshapp_swoosh.gif') no-repeat left bottom ;
+}
+#whatshappening h1 span {
+	font-weight:bold;
+}
+#whatshappening #happening_links {
+	font-size:9pt;
+	display:block;
+	font-weight:bold;
+	float:left;
+	margin:5px 0 0 0;
+}
+#whatshappening #happening_links a {
+	float:left;
+	color:#000;
+	display:block;
+	margin-right:20px;
+}
+#whatshappening #happening_links a.cal {
+	background:url('/images/system/home_viewcalendar.gif') no-repeat 0 0;
+	padding-left:20px;
+	height:16px;
+}
+#whatshappening #happening_links a.rss{
+	background:url('/images/system/whatshapp_getrss.gif') no-repeat 0 0;
+	padding-left:20px;
+	height:18px;
+}
+#whatshappening .home_eventitem {
+	float:left;
+	width:225px;
+	margin:15px 5px 0 0;
+}
+#whatshappening .home_eventitem h1 {
+	background:none;
+	font-size:10pt;
+	font-weight:bold;
+	height:auto;
+}
+#whatshappening .home_eventitem p {
+	font-size:9pt;
+	line-height:1.2em;
+	float:left;
+	height:auto;
+	width:170px;
+	margin-top:5px;
+}
+#whatshappening .home_eventitem h4 { /* overall box container for cal icon */
+	width:39px;
+	height:47px;
+	float:left;
+	text-align:center;
+	display:block;
+	margin-right:10px;
+}
+#whatshappening .home_eventitem h4 span.month {
+	background:#ff7f00;
+	color:#000;
+	text-transform:uppercase;
+	font-size:10pt;
+	font-weight:bold;
+	width:39px;
+	height:18px;
+	padding-top:3px;
+	display:block;
+}
+#whatshappening .home_eventitem h4 span.day {
+	background:url('/images/system/cal_dayentrybg.gif') no-repeat 0 0;
+	height:23px;
+	width:39px;
+	padding-top:3px;
+	color:#fff;
+	font-weight:bold;
+	font-size:14pt;
+	display:block;
+}
+
+/* RIGHT COLUMN HOME */
+#right_content {
+	float:right;
+	width:282px;
+	height:auto;
+}
+#right_top {
+	background:url('/images/system/home_rightcoltop.gif') no-repeat 0 0;
+	width:282px;
+	height:53px;
+}
+#right_content #storyarea {
+	padding:0 30px 0 18px;
+}
+.storyitem {
+	background:url('/images/system/rightcol_swoosh.gif') no-repeat 0 100%;
+	width:234px;
+	padding-bottom:30px;	
+}
+.storyitem img {
+	float:left;
+	margin:0 10px 10px 0;
+}
+.storyitem h1 {
+	    font-weight:bold;
+	    color:#000;
+	    font-size:13pt;
+	    padding:10px 0;
+}
+.storyitem p {
+	font-size:9pt;
+	line-height:1.2em;
+	margin-bottom:10px;
+}
+.storyitem a:link, .storyitem a:visited {
+	font-size:9pt;
+	font-weight:bold;
+	float:right;
+	color:#484878;
+}
+/* FOOTER STYLES */
+#footerwrapper {
+  width:1006px;
+	height:53px;
+	background:url('/images/system/footer_bg.gif') no-repeat 0 0;
+	clear:both;
+	text-align:center;
+}
+#footerwrapper ul {        
+	padding:10px 0 0 25%;
+	list-style:none;
+}
+#footerwrapper li {	  
+	background:url('/images/system/footer_navsep.gif') no-repeat bottom left;
+	padding:0 0 0 2px;
+	height:33px;
+	float:left;
+}
+#footerwrapper li#footerlast {
+	background:url('/images/system/footer_navsep.gif') repeat-x bottom right;
+	padding-right:2px;
+}
+#footerwrapper a:link, #footerwrapper a:visited {
+	color:#fff;
+	font-size:10pt;
+	font-weight:bold;
+	display:block;
+	height:25px;
+	float:left;
+	padding:8px 15px 0 15px;
+	width:auto;
+	background:url('/images/system/footer_navbg.gif') repeat-x 0 0;
+}
+#footerwrapper a:hover {
+	text-decoration:none;
+	background:url('/images/system/footer_navbgroll.gif') repeat-x 0 0;
+}

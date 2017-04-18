@@ -1,0 +1,7 @@
+/* DELTA COLLEGE PRINT CSS */
+body {font-family:Arial, Verdana;}
+h1 { font-size:1.4em; }
+#homecontentarea, #left_content, #brandingarea, #whatshappening, #rightcontent, #storyitem {width:100%;}
+#mainlogo img, #brandingarea, #header_toplinks, #searcharea, #gnav, #audiencebar, #happening_links, #footerwrapper {display:none;}
+.month {margin-right:5px;}
+

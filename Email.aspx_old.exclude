@@ -1,0 +1,7 @@
+<%@ Page Language="C#" Theme="Default" MasterPageFile="~/public/Default.master" AutoEventWireup="true" CodeFile="Email.aspx.cs" Inherits="EmailTest" Title="Untitled Page" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+	<asp:Button runat="server" ID="btnTest" OnClick="btnTest_Click" Text="Test" />
+</asp:Content>
+

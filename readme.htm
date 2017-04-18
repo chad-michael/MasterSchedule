@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+</head>
+<body>
+    <span style="font-size: 16pt"><strong>Master Schedule Application Notes<br />
+        <br />
+        <span style="font-size: 12pt">Email</span><br />
+    </strong><span style="font-size: 12pt">In the web.config file there under AppSettings
+        there is a number of keys to configure the email settings. Emails are sent to a
+        faculty member when the change they submitted is approved or denied. An optional
+        "Admin" email is sent only when a change has been approved. To change the formatting
+        of the emails you will have to modify the stringbuilder in NeedsApproval.aspx.cs.<br />
+        <br />
+        <strong>Pending Schedule Changes</strong><br />
+        When viewing a course the pending changes are listed underneath. If you make a change
+        it will show up immediately. When it is approved or denied it will be removed since
+        it is not "Pending" any more. Everyone can see the pending changes list when they
+        are viewing course details. Division chair persons will see a message on the Home
+        page if there are pending changes that require their attention. They can click on
+        the "View Pending Changes" link which will show them only the changes that are relevant
+        to the departments in their division. They can then "Approve" or "Ignore" the change.<br />
+        <br />
+        <strong>Authentication &amp; Access Control</strong><br />
+        Authentication is based off of Delta's LDAP/AD security. AD groups do not play a
+        role in access control. The only access control used is a lookup of the currently
+        logged in users' name to determine if they are division chair.<br />
+        <br />
+        <strong>Controls<br />
+        </strong>In ViewSection.aspx each tab is associated to a control in the Controls
+        folder. The AddCourse.aspx uses the same principle but the control name is postpended
+        _New.<br />
+        <br />
+        <strong>Change log messages<br />
+        </strong>In each control there is usually a StringBuilder class that is used to
+        build the "Change" message. HTML is used to format the message so if the format
+        needs to be changed you will have to go into each one of those controls and change
+        how it is comprised.</span></span>
+
+</body>
+</html>

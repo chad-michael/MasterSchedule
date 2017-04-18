@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Delta_3Col_Inner.master.cs"
+    Inherits="Shared.Delta_3Col_Inner" %>
+
+<%@ Register Src="Controls/HeaderWrapper.ascx" TagName="HeaderWrapper" TagPrefix="sungard" %>
+<%@ Register Src="Controls/GNav.ascx" TagName="GNav" TagPrefix="sungard" %>
+<%@ Register Src="Controls/Footer.ascx" TagName="Footer" TagPrefix="sungard" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Delta College</title>
+    <link href="/style/MainContent.css" rel="stylesheet" type="text/css" />
+    <link href="/css/101.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/102.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/133.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/103.css" rel="stylesheet" type="text/css" media="print" />
+    <link href="/css/LeftSideBar.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <table class="PageBoundingBox" cellspacing="0" cellpadding="0" width="0" align="center">
+            <tr valign="top">
+                <td>
+                    <!-- Begin Header Area -->
+                    <div id="headerwrapper">
+                        <sungard:HeaderWrapper ID="HeaderWrapper1" runat="server" />
+                    </div>
+                    <!-- end header wrapper -->
+                    <div id="gnav">
+                        <sungard:GNav ID="GNav1" runat="server" />
+                    </div>
+                    <!-- end gnav -->
+                    <div id="header_contentbar">
+                        <h3>
+                            <asp:ContentPlaceHolder runat="server" ID="PageHeaderTitle">
+                            </asp:ContentPlaceHolder>
+                        </h3>
+                        <!-- top button part goes here -->
+                        <a href="http://uatweb4.delta.edu/helpcenter/start.aspx" title="Delta College Help Center"></a>
+                    </div>
+                    <!-- End Header Area -->
+                    <!-- Begin Content Area -->
+                    <table class="ContentBoundingBox" cellspacing="0" cellpadding="0" width="100%">
+                        <tr valign="top">
+                            <!-- 3 Column Style -->
+                            <!-- START LSB Column Content Area -->
+                            <td class="LSB" valign="top" width="0">
+                                <div id="lsbdiv">
+                                    <asp:ContentPlaceHolder ID="lsb" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                                <!-- end lsbdiv -->
+                                <div id="lsbbottom">
+                                </div>
+                            </td>
+                            <!-- END LSB Column Content Area -->
+                            <!-- START MAIN Column Content Area -->
+                            <td class="MainContent" width="100%">
+                                <!-- Begin Main PreContent Area -->
+                                <div id="preblock_wrapper">
+                                    <div id="crumbsdotted">
+                                        <div id="crumbs">
+                                            <asp:ContentPlaceHolder runat="server" ID="crumbs">
+                                            </asp:ContentPlaceHolder>
+                                        </div>
+                                    </div>
+                                    <div id="top_rsb_green">
+                                        <a href="/helpcenter/start.aspx" title="Delta College Help Center"></a>
+                                        <!-- bottom button part goes here -->
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                                <div id="rsb">
+                                    <asp:ContentPlaceHolder runat="server" ID="rsbContent">
+                                    </asp:ContentPlaceHolder>
+                                    <div id="rsbfiller">
+                                    </div>
+                                </div>
+                                <div id="MainContentdiv">
+                                    <div id="content">
+                                        <asp:ContentPlaceHolder runat="server" ID="contentMain">
+                                        </asp:ContentPlaceHolder>
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- END MAIN Column Content Area -->
+                            <!-- RSB Column Content Area -->
+                            <td class="RSB" valign="top" width="0">
+                                <!-- END RSB Column Content Area -->
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- End Content Area -->
+                    <!-- Begin Footer Area -->
+                    <div id="footerwrapper">
+                        <sungard:Footer runat="server" ID="Footer1" />
+                    </div>
+                    <!-- End Footer Area -->
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

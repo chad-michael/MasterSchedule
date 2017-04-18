@@ -1,0 +1,62 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="DeltaUserRO.ascx.cs" Inherits="Controls_Shared_DeltaUserRO" %>
+<%@ Register Src="BlackHeader.ascx" TagName="BlackHeader" TagPrefix="uc1" %>
+
+<br />
+<asp:Repeater ID="FormView1" runat="server">
+<HeaderTemplate>
+  
+</HeaderTemplate>
+    <ItemTemplate>
+     <div class="modalwindow">
+          <table  cellpadding="5">
+        <tr>
+            <td colspan="2">
+            <uc1:BlackHeader ID="BlackHeader1" BannerText='<%# Eval("FullName") %>' runat="server" />
+            </td>
+            </tr>
+               <tr>
+                <td >
+                    <div style="margin-left:6px;">
+                    Full Name:
+                    </div>
+                    </td>
+                <td>
+                    <asp:Label ID="FullNameLabel" runat="server" Text='<%# Bind("FullName") %>'></asp:Label></td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                 <div style="margin-left:6px;">
+                    Email Address:</div></td>
+                <td>
+                    <asp:HyperLink ID="EmailAddressLabel" runat="server" NavigateUrl='<%# Eval("EmailAddress","mailto:{0}" ) %>' Text='<%# Bind("EmailAddress") %>'></asp:HyperLink></td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                 <div style="margin-left:6px;">
+                    Delta ID:</div></td>
+                <td>
+                    <asp:Label ID="IDNOLabel" runat="server" Text='<%# Bind("IDNO") %>'></asp:Label></td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                 <div style="margin-left:6px;">
+                    Office Phone:</div></td>
+                <td>
+                    <asp:Label ID="OfficePhoneLabel" runat="server" Text='<%# Bind("OfficePhone") %>'></asp:Label></td>
+                <td>
+                </td>
+            </tr>
+            
+           
+        </table>
+        </div>
+    </ItemTemplate>
+</asp:Repeater>
+&nbsp;
+

@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PublicX.master.cs" Inherits="MasterPages.MasterPages_Public" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../App_Themes/HomePageStyle.css" rel="stylesheet" type="text/css" />
+    <link href="../App_Themes/PageStyles.css" rel="stylesheet" type="text/css" />
+    <title>Delta College</title>
+</head>
+<body>
+    <div class="PageBoundingBox">
+        <!-- Begin Header Area -->
+        <div class="container">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr valign="top">
+                    <td class="logo">
+                        <a href="/" title="Delta College Home Page">
+                            <img src="https://www.delta.edu/images/system/default_logo.gif" alt="Delta College" width="234" height="53"
+                                border="0" /></a></td>
+                    <td class="globalBlock">
+                        <span class="globalTopLinks"><a href="http://www.delta.edu/atoz.asp" title="A-Z Index">A-Z Index</a> <a href="http://webdev.delta.edu/calendar_delta_main/index.aspx" title="Events Calendar">Events Calendar</a> <a href="http://www.delta.edu/alumni/" title="Alumni">Alumni</a>
+                            <a href="http://www.delta.edu/search/" title="People Finder">People Finder</a> <a
+                                href="mailto:info@delta.edu" title="Contact Us">Contact Us</a></span>
+                        <form action="http://www.google.com/u/DeltaCollegeMI" method="GET" name="search"
+                            class="searchform" id="search">
+                            <table border="0" cellspacing="0" align="right">
+                                <tr>
+                                    <td style="padding-right: 10px;">
+                                        <select name="quicklinks" id="quicklinks" onchange="window.location=this.form.quicklinks.value;"
+                                            class="selectquicklink">
+                                            <option value="#" selected="selected">Quicklinks</option>
+                                            <option value="http://www.delta.edu/degreesprograms">Career Programs</option>
+                                            <option value="https://my.delta.edu/servlet/com.datatel.server.servlets.webadvisor.WebAdvisor?MENU=st&amp;MNEMONIC=WSEI&amp;APPLICATION=ST&amp;USERID=guest&amp;PASSWORD=*&amp;">Class Search</option>
+                                            <option value="http://webmail.delta.edu">Email</option>
+                                            <option value="http://www.delta.edu/humres/">Employment</option>
+                                            <option value="http://www.delta.edu/educator/index.asp">Educator</option>
+                                            <option value="http://www.delta.edu/gettingstarted.asp">Getting Started</option>
+                                            <option value="https://my.delta.edu/datatel/openweb/st/stmenu.asp">MyDelta</option>
+                                            <option value="http://www.delta.edu/search/">People Finder</option>
+                                            <option value="http://www.delta.edu/services.asp">Student Services</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="hidden" name="domains" value="delta.edu" />
+                                        <input type="hidden" name="sitesearch" value="delta.edu" />
+                                        <input name="q" type="text" id="q" value="Search" class="inputsearch" onclick="this.value = '';" /></td>
+                                    <td style="padding-left: 3px;">
+                                        <input type="image" alt="Start Search" src="https://www.delta.edu/images/system/btn_go.gif" name="sa"
+                                            value="Go" /></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="container">
+            <div style="float: right;">
+                <ul id="gnav">
+                    <li><a href="http://www.delta.edu/gettingstarted.asp">Getting Started</a></li>
+                    <li><a href="https://my.delta.edu/servlet/com.datatel.server.servlets.webadvisor.WebAdvisor?MENU=st&MNEMONIC=WSEI&APPLICATION=ST&USERID=guest&PASSWORD=*&">Search for Classes</a></li>
+                    <li><a href="http://www.delta.edu/degreesprograms">Academic Programs</a></li>
+                    <li><a href="http://www.delta.edu/humres/">Employment</a></li>
+                    <li><a href="http://www.delta.edu/services.asp">Student Services</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Header Area -->
+        <!-- Begin Content Area -->
+        <div class="ContentBoundingBox">
+            <div class="MainContent">
+                <form id="form1" runat="server">
+
+                    <!-- 1 Column Style -->
+                    <!-- START MAIN Column Content Area -->
+                    <div class="container">
+
+                        <asp:ContentPlaceHolder ID="lsb" runat="server">
+                        </asp:ContentPlaceHolder>
+
+                        <div id="contentHeader" class="contentHeader">
+                            <br />
+                            <div style="float: right;">
+                                <asp:Menu ID="Menu1" runat="server" BackColor="#F7F6F3"
+                                    DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="10pt"
+                                    ForeColor="#7C6F57" Orientation="Horizontal" StaticSubMenuIndent="10px">
+                                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                    <DynamicSelectedStyle BackColor="#5D7B9D" />
+                                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="http://www.delta.edu" Text="Delta Home"
+                                            Value="Delta Home" ToolTip="Delta Home Page"></asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/Tracking_MyList.aspx" Text="My Requests"
+                                            Value="My Requests"></asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/Tracking_RequestDetails.aspx"
+                                            Text="Request Details" Value="Request Details"></asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/Logoff.aspx" Text="Log Off" Value="Log Off"></asp:MenuItem>
+                                    </Items>
+                                    <StaticHoverStyle Font-Underline="True" BackColor="#E0E0E0" ForeColor="White" />
+                                    <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                                    <DynamicMenuStyle BackColor="#F7F6F3" />
+                                    <StaticSelectedStyle BackColor="#5D7B9D" />
+                                </asp:Menu>
+                            </div>
+                        </div>
+                        <div class="content">
+
+                            <asp:ContentPlaceHolder ID="contentMain" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                    <!-- END MAIN Column Content Area -->
+                </form>
+                <!-- Begin Footer Area -->
+            </div>
+        </div>
+
+        <div class="container">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="footer">
+                <tr valign="top">
+                    <td align="left">Send comments or questions to <a href="mailto:info@delta.edu">info@delta.edu</a><br>
+                        Copyright &copy; 2004 Delta College - Revised: February 28, 2006</td>
+                    <td align="right">Delta College &bull; 1961 Delta Rd. &bull; University Center, MI 48710<br>
+                        989-686-9000 &bull; <a href="mailto:info@delta.edu">info@delta.edu</a><br>
+                        <a href="http://www.delta.edu/accessanduse.html">Access and Use Guidelines</a></td>
+                </tr>
+            </table>
+        </div>
+        <!-- End Footer Area -->
+    </div>
+    <div>
+    </div>
+</body>
+</html>

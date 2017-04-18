@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MasterSchedule">
+  <DataContextMoniker Name="/MasterScheduleDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9bb689c8-cf42-48a4-85eb-ac25e5a519fa" absoluteBounds="1.375, 1.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/MasterScheduleDataContext/MeetingCenterContact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6d648776-c490-48a1-b401-c8f2af3e7c8e" absoluteBounds="1.3899999999999997, 1.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d428393c-23e7-4b15-8776-b6264e6cde29" absoluteBounds="3.75, 1.625, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/MasterScheduleDataContext/SendMessageOnLogApproval" />
+      <nestedChildShapes>
+        <elementListCompartment Id="82df02fe-f317-40c4-bf14-a9cf4c3fa5d9" absoluteBounds="3.7649999999999997, 2.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

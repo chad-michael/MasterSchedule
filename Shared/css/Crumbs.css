@@ -1,0 +1,106 @@
+﻿.CrumbTopGroup
+{
+  cursor:pointer; 
+}
+
+.CrumbMenuGroup
+{
+  background-color:#F5F5F5;
+  border:1px #4E5358 solid; 
+  border-style:solid;
+}
+
+.CrumbTopMenuItem
+{
+    background-color:#ffffff;
+    border:1px #ffffff solid; 
+    border-style:solid;
+    font-family: tahoma;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #525281;
+}
+
+.CrumbTopMenuItemHover
+{
+    border: 1px solid #50507E;
+    font-family: tahoma;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #525281;
+    background-color: #D1D1E0;
+}
+
+.CrumbMenuItem
+{
+    border: 1px solid #F5F5F5; 
+    font-family: tahoma;
+    font-size: 12px;
+    cursor: pointer;
+    color: #525281;
+}
+
+.CrumbMenuItemHover 
+{
+  background-color:#E4F1F7; 
+  background-image: url(/public/delta/images/crumbs/item_bg.gif);
+  color:#00025C;
+  border: 1px solid #AADAED; 
+  font-family:tahoma; 
+  font-size:12px; 
+  cursor:pointer; 
+}
+
+.CrumbMenuBreak
+{
+  border: 1px solid #F5F5F5; 
+  color:#00025C;
+  font-family:tahoma; 
+  font-size:11px; 
+  font-weight:bold;
+  cursor:pointer; 
+}
+
+.CrumbMenuBreakHover
+{
+  border: 1px solid #F5F5F5; 
+  color:#00025C;
+  font-family:tahoma; 
+  font-size:11px; 
+  font-weight:bold;
+  cursor:pointer; 
+}
+
+.ScrollItem
+{
+  background-color:#FBFBFB; 
+  font-family:verdana; 
+  font-size:12px; 
+  border:solid 1px #FBFBFB; 
+  cursor:default;
+  text-align:center;
+}
+
+.ScrollItemH
+{
+  background-color:silver; 
+  color:black; 
+  font-family:verdana; 
+  font-size:12px; 
+  border:solid 1px gray; 
+  cursor:default;
+  text-align:center;
+}
+
+.ScrollItemA
+{
+  background-color: darkgray; 
+  color:black; 
+  font-family:verdana; 
+  font-size:12px; 
+  border:solid 1px gray; 
+  cursor:default;
+  text-align:center;
+}

@@ -1,0 +1,641 @@
+/* Interior pages with 2 and 3 columns additional CSS styles */
+
+
+.landing_ulcol
+{
+    float: left;
+    margin: 0pt 15px 0pt 5px;
+    width: 145px;
+}
+.landing_ulcol h2
+{
+    color: #114434;
+    font-size: 13pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.landing_ulcol h2 span
+{
+    font-weight: normal;
+}
+.landing_ulcol ul
+{
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0pt 0pt 25px;
+    padding: 0pt;
+}
+.landing_ulcol li
+{
+    border-bottom: 1px solid #A7E4E5;
+    padding: 4px 0pt;
+}
+
+.landing_ulcol a:link, .landing_ulcol a:visited
+{
+    color: #4F4F7D;
+    font-size: 9pt;
+    text-decoration:none;
+}
+
+
+
+.messageboard img
+{
+    margin-right: 10px;
+}
+
+/*-----------------First Tier ******/
+
+.mcLinkList .container
+{
+    background-image: url('../images/contentitem_bg.jpg');
+    background-repeat: repeat-x;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    border: 1px solid #ededed;
+}
+
+.mcLinkList .containerTitle
+{
+    background-image: url('../images/contentitemhead_bg.jpg');
+    background-color: #504e7d;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 10pt;
+    width: 50%;
+    left: -25px;
+    padding: 10px;
+    position: relative;
+    top: -30px;
+    border: 1px solid #ededed;
+}
+
+.mcLinkList ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lnkArrowLeft
+{
+    background: url('../images/arrow_left.gif') no-repeat;
+    padding: 1px 0 2px 20px;
+}
+
+#content .mcLinkList li.item
+{
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+    background-image: url('../images/icons/16_howto.png');
+    background-repeat: no-repeat;
+    background-position: 0 2%;
+    padding-left: 1.9em;
+    margin-top: 15pt;
+}
+
+#content .mcLinkList A
+{
+    font-weight: bold;
+}
+
+#content .mcLinkList p
+{
+    margin-top: 2pt;
+    font-size: 8pt;
+}
+
+
+
+#content th
+{
+    font-weight: normal;
+    font-size: 10pt;
+}
+
+#content .mcLinkList td
+{
+}
+
+#content img
+{
+    padding: 5px;
+    border: 1px solid #b9b9d3;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+/* 2 COLUMN STYLES */
+#preblock_wrapper
+{
+    background: url('../images/corner_shadowfix.gif') no-repeat 527px 0;
+    padding: 0 0 0 15px;
+    margin: 0x;
+    height: 67px;
+}
+#crumbsdotted
+{
+    margin: 10px 0 0 0;
+    float: left;
+    width: 500px;
+}
+#top_rsb
+{
+    float: left;
+    padding-left: 23px;
+}
+#top_rsb
+{
+    background: url('../images/rsb_topbuttonwhite.gif') no-repeat top right;
+}
+#MainContentdiv
+{
+    margin: 0px 0px 0px 0px;
+    background-position: none;
+    padding: 0px 50px 24px 15px;
+    background: none;
+}
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6
+{
+    color: #013826;
+    font-weight: bold;
+    font-size: 16pt;
+    padding-bottom: 26px;
+}
+
+#content h2
+{
+    font-size: 13pt;
+    background: none;
+    padding: 0 0 10px 0;
+}
+#content h3
+{
+    font-size: 12pt;
+    background: none;
+    padding: 0 0 10px 0;
+}
+#content h4
+{
+    font-size: 12pt;
+    background: none;
+    padding: 0 0 10px 0;
+}
+#content h5
+{
+    font-size: 12pt;
+    background: none;
+    padding: 0 0 10px 0;
+}
+#content h6
+{
+    font-size: 11pt;
+    background: none;
+    padding: 0 0 10px 0;
+}
+#content ul
+{
+    font-size: 11pt;
+    background: none;
+    padding: 0 0 10px 0;
+    font-size: 9pt;
+    line-height: 1.4em;
+}
+#content li
+{
+    padding: 3px 0;
+}
+#content a:link, #content a:visited
+{
+    color: #484878;
+    text-decoration: underline;
+}
+#content a:hover
+{
+    color: green;
+}
+/* FOOTER OVERWRITE */
+#footerwrapper
+{
+    background:transparent url(../images/2col_footerbg.gif) no-repeat scroll 0 0;
+clear:both;
+height:130px;
+text-align:center;
+}
+/* 3 COLUMN STYLES */
+#top_rsb_green
+{
+    float: left;
+    padding-left: 22px;
+}
+#top_rsb_green
+{
+    width: 234px;
+    height: 67px;
+    background: url('../images/rsb_topbuttonbg2.gif') no-repeat top right;
+    position: relative;
+}
+#top_rsb_green a:link, #top_rsb_green a:visited
+{
+    width: 82px;
+    height: 39px;
+    display: block;
+    position: absolute;
+    right: 35px;
+    top: 0;
+}
+
+
+#rsbcontainer {
+    width:233px;
+    float: right;
+    border-left: 1px solid #dbdbdb;
+    padding: 20px 12px 0 0;
+   
+    background: #f4f8e7 url('../images/rsb_landingbg.gif') repeat-y 0 0;
+
+}
+
+#rsb
+{
+    float: right;
+    border-left: 1px solid #dbdbdb;
+    padding: 20px 12px 0 0;
+    margin: 0 0 45px 20px;
+    background: #f4f8e7 url('../images/rsb_landingbg.gif') repeat-y 0 0;
+}
+/* hack for ie6 to fix margin bug */
+* html #rsb
+{
+    margin-top: -1px;
+}
+#rsb .groupcontainer, #rsbcontainer .groupcontainer
+{
+}
+#rsb .groupcontainer h3, #rsbcontainer .groupcontainer h3
+{
+    color: #013826;
+    font-size: 13.5pt;
+    margin: 0 0 15px 18px;
+    font-weight: normal;
+}
+#rsb .groupcontainer ul, #rsbcontainer .groupcontainer ul
+{
+    list-style: none;
+    margin: 0 0 0 18px;
+    padding: 0 0 30px 0;
+    font-size: 9pt;
+}
+#rsb .groupcontainer li, #rsbcontainer .groupcontainer li
+{
+    border-bottom: 1px solid #a7dad0;
+    padding: 4px 0;
+    width: 170px;
+}
+
+#rsb .groupcontainer li:hover, #rsbcontainer .groupcontainer li:hover
+{
+    background-color: #e4e9d5;
+}
+
+#rsb .groupcontainer li.howto
+{
+    background-image: url('../images/explorer/config.gif');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding-left: 1.9em;
+}
+
+#rsb .groupcontainer li.pdf
+{
+    background-image: url('../images/explorer/pdf.gif');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding-left: 1.9em;
+}
+
+#rsb .groupcontainer li.disabilityservices
+{
+    background-image: url('../images/explorer/disablityservices.gif');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding-left: 1.9em;
+}
+
+
+#rsb .groupcontainer a:link, #rsbcontainer .groupcontainer a:link
+{
+    display: block;
+    width: 170px;
+}
+#rsb .groupcontainer a:hover, #rsbcontainer .groupcontainer a:hover
+{
+    color: #000;
+    text-decoration: none;
+}
+#rsbfiller
+{
+    background: #f4f8e7;
+    border-bottom: 1px solid #dbdbdb;
+    height: 1px;
+
+}
+
+
+
+#contentLinks
+{
+    float: left;
+}
+#contentLinks .landing_ulcol
+{
+    float: left;
+    width: 145px;
+    margin: 0 15px 0 5px;
+}
+#contentLinks h2
+{
+    font-weight: bold;
+    font-size: 13pt;
+    margin-bottom: 10px;
+    color: #114434;
+}
+#contentLinks h2 span
+{
+    font-weight: normal;
+}
+#contentLinks ul
+{
+    list-style: none;
+    margin: 0 0 25px 0;
+    padding: 0;
+}
+#contentLinks li
+{
+    padding: 4px 0;
+    border-bottom: 1px solid #a7e4e5;
+}
+#contentLinks a:link, #contentLinks a:visited
+{
+    font-size: 9pt;
+    font-weight: normal;
+    color: #4f4f7d;
+    text-decoration: none;
+}
+
+
+/* 
+  -- Even more rounded corners with CSS: Base stylesheet --
+*/
+
+.dialog
+{
+    position: relative;
+    margin: 0px auto;
+    min-width: 8em;
+    max-width: 760px; /* based on image dimensions - not quite consistent with drip styles yet */
+    color: #fff;
+    z-index: 1;
+    margin-left: 12px; /* default, width of left corner */
+    margin-bottom: 0.5em; /* spacing under dialog */
+}
+
+.dialog .content, .dialog .t, .dialog .b, .dialog .b div
+{
+    background: transparent url(../images/dialog2-blue-800x1600.png) no-repeat top right;
+    background-image: url(../images/dialog2-blue.gif);
+}
+
+.dialog .content
+{
+    position: relative;
+    zoom: 1;
+    _overflow-y: hidden;
+    padding: 0px 12px 0px 0px;
+}
+
+.dialog .t
+{
+    /* top+left vertical slice */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 12px; /* top slice width */
+    margin-left: -12px;
+    height: 100%;
+    _height: 1600px; /* arbitrary long height, IE 6 */
+    background-position: top left;
+}
+
+.dialog .b
+{
+    /* bottom */
+    position: relative;
+    width: 100%;
+}
+
+.dialog .b, .dialog .b div
+{
+    height: 30px; /* height of bottom cap/shade */
+    font-size: 1px;
+}
+
+.dialog .b
+{
+    background-position: bottom right;
+}
+
+.dialog .b div
+{
+    position: relative;
+    width: 12px; /* bottom corner width */
+    margin-left: -12px;
+    background-position: bottom left;
+}
+
+.dialog .hd, .dialog .bd, .dialog .ft
+{
+    position: relative;
+}
+
+.dialog .wrapper
+{
+    /* extra content protector - preventing vertical overflow (past background) */
+    position: static;
+    max-height: 1000px;
+    overflow: auto; /* note that overflow:auto causes a rather annoying redraw "lag" in Firefox 2, and may degrade performance. Might be worth trying without if you aren't worried about height/overflow issues. */
+}
+
+
+.dialog p.content
+{
+    margin-bottom: 0px;
+    margin: 0px;
+}
+
+.dialog h2, .dialog p
+{
+    margin: 0px; /* margins will blow out backgrounds, leaving whitespace. */
+    padding: 0.5em 0px 0.5em 0px;
+}
+
+.dialog h2
+{
+    padding-bottom: 0px;
+}
+
+
+/*******************************
+	Default GridView styles
+*******************************/
+.GridView_Footer
+{
+}
+.GridView_Empty
+{
+}
+.GridView_Row
+{
+    background-color: #fff;
+    border: solid 1px #c0c0c0;
+}
+.GridView_Row td
+{
+    padding: 5px;
+    border: 0px;
+    font-size: 9pt;
+    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+}
+.GridView_Edit
+{
+}
+.GridView_Selected
+{
+}
+.GridView_Pager
+{
+    background-color: #5C788E;
+    border: solid 1px #c0c0c0;
+}
+.GridView_Pager td
+{
+    text-align: center;
+    margin: 0 auto;
+}
+.GridView_Pager td td
+{
+    padding: 0px 0px;
+    color: #000000;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+.GridView_Pager td a, .GridView_Pager td a:link, .GridView_Pager td a:visited, .GridView_Pager td a:active
+{
+    color: #FFFFFF;
+    font-weight: normal;
+}
+.GridView_Header
+{
+    background-color: #5C788E;
+    border: solid 1px #c0c0c0;
+}
+.GridView_Header th
+{
+    padding: 3px 5px;
+    color: #ffffff;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+}
+.GridView_Header a, .GridView_Header a:link, .GridView_Header a:active, .GridView_Header a:visited
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.GridView_Alt
+{
+    background-color: #dce3f1;
+    border: solid 1px #c0c0c0;
+}
+.GridView_Alt td
+{
+    padding: 5px;
+    border: 0px;
+    font-size: 9pt;
+    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+}
+
+
+
+.inputbox
+{
+    font-size: 11px;
+    position: relative;
+    background: #FDFCF6 url('/_layouts/images/boxbg.gif') repeat-x;
+    padding: 1.5em;
+    border-bottom: solid 1px #E1D2BD;
+    margin-bottom: 1.0em;
+}
+
+.inputbox table tr td
+{
+    padding-top: 15px;
+}
+
+.inputbox input, .inputbox textarea
+{
+    margin: 0px 0px 8px 0px;
+    width: 275px;
+}
+
+.inputbox label
+{
+    font-weight: bold;
+}
+
+.inputbox .button, .button
+{
+    -x-system-font: none;
+    font-family: tahoma;
+    font-size: 8pt;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 2.1em;
+    line-height: normal;
+    padding-bottom: 0.4em;
+    padding-top: 0.1em;
+    width: 7.5em;
+}
+
+
+.inputtable tr td
+{
+    padding: 10px;
+}
+
+.inputtable tr td.titleCell
+{
+    width: 300px;
+    vertical-align: top;
+}
+
+.inputtable tr td.inputCell
+{
+    padding-left: 50px;
+}
+
+.inputtable tr td.buttonrow
+{
+    padding-top: 15px;
+    text-align: right;
+}

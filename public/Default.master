@@ -1,0 +1,454 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs" Inherits="public.public_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Master Schedule</title>
+    <style type="text/css">
+        body {
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+            font-family: Tahoma;
+            font-size: 9pt;
+            background: #025239 url('/MasterSchedule/public/images/bg.gif') repeat-x;
+        }
+
+        a, a:link, a:visited {
+            color: #0054a6;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        #pagecontainer, #headcontainer, #footcontainer, #navcontainer, #pagecontent {
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+            clear: both;
+            width: 1024px;
+        }
+
+        #headcontent {
+            padding-top: 54px;
+        }
+
+        #pagecontainer {
+            background: #FFFFFF;
+            width: 100%;
+        }
+
+        #pagecontent, #headcontent, #footcontent, #breadcrumbs, #globalNav {
+            width: 1024px;
+            text-align: left;
+        }
+
+        #breadcrumbs {
+            padding: 9px 0 7px 0;
+            font-family: Tahoma;
+            font-size: 9pt;
+            margin-bottom: 15px;
+        }
+
+        #maincontent {
+            width: 1024px;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-family: Trebuchet MS;
+            font-size: 16pt;
+            font-weight: bold;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            font-family: Trebuchet MS;
+            font-size: 13pt;
+            font-weight: bold;
+        }
+
+        .modalwindow {
+            background: #FFFFFF;
+            padding: 15px;
+            max-width: 400px;
+        }
+
+        .modalbg {
+            background: url('/MasterSchedule/public/images/modalbg.png');
+        }
+
+        .modalwindow h1,
+        .modalwindow h2,
+        .modalwindow h3 {
+            font-size: 15pt;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .tdleftcol {
+            width: 50%;
+            padding: 0 10px 10px 0;
+        }
+
+        .tdrightcol {
+            width: 50%;
+            padding: 0 0 10px 10px;
+        }
+
+        .tdkey {
+            background: #eeeeee;
+            border-bottom: 1px solid #ffffff;
+            padding: 3px 5px;
+            text-align: right;
+        }
+
+        .tdvalue {
+            border-bottom: 1px solid #ffffff;
+            padding: 3px 5px;
+        }
+
+        .noteinfo, .noteinfo2 {
+            white-space: nowrap;
+            vertical-align: top;
+            font-size: 8pt;
+            font-family: Tahoma;
+            padding: 5px;
+        }
+
+        .note, .note2 {
+            width: 100%;
+            vertical-align: top;
+            font-size: 8pt;
+            font-family: Tahoma;
+            padding: 5px 5px 5px 10px;
+        }
+
+            .note p, .note2 p {
+                margin: 0 0 15px 0;
+                padding: 0;
+            }
+
+        .noteinfo, .note {
+            background: #dcf5d8;
+        }
+
+        .noteinfo2, .note2 {
+            background: #FFFFFF;
+        }
+
+        .private {
+            color: #CF4D2B;
+            size: 8pt;
+            font-weight: bold;
+        }
+
+        h1.appname {
+            color: #0B2A68;
+            margin: 10px 0 5px 0;
+            padding: 0;
+            font-family: Trebuchet MS;
+            font-size: 24pt;
+            font-weight: bold;
+        }
+
+        .btnGreen {
+            font-family: Tahoma;
+            font-size: 8pt;
+            font-weight: bold;
+            color: #FFFFFF;
+            background: #427d42;
+            border: 1px solid #025239;
+            margin: 2px 5px;
+            padding: 3px 6px;
+        }
+
+        .multiselectnote {
+            margin: 3px;
+            padding: 3px;
+            width: 150px;
+            font-size: 8pt;
+            border: 1px solid #c0c0c0;
+            background: #FFFFE1;
+        }
+
+        .norecords {
+            margin: 5px;
+            padding: 10px;
+            font-size: 9pt;
+            border: 1px solid #800000;
+            background: #FFCEBE;
+        }
+
+        .NeedsApprovalMsg {
+            margin: 5px 0 15px 0;
+            padding: 10px 10px 7px 10px;
+            font-size: 9pt;
+            border: 1px solid #0066c2;
+            background: #e5eaf6;
+        }
+
+        .NeedsApprovalNumber {
+            font-weight: bold;
+            font-size: 10pt;
+            color: #000080;
+        }
+
+        /*
+GridView styles
+*/
+
+        .GridView_Footer {
+        }
+
+        .GridView_Empty {
+        }
+
+        .GridView_Row {
+            background-color: #fff;
+            border: solid 1px #c0c0c0;
+        }
+
+            .GridView_Row td {
+                padding: 3px 7px;
+                border: 0px;
+            }
+
+        .GridView_Edit {
+        }
+
+        .GridView_Selected {
+        }
+
+        .GridView_Pager {
+            background-color: #025239;
+            border: solid 1px #c0c0c0;
+        }
+
+            .GridView_Pager td {
+                text-align: center;
+            }
+
+                .GridView_Pager td td {
+                    padding: 0px 0px;
+                    color: #5AA75A;
+                    font-weight: bold;
+                    padding: 0px 5px;
+                }
+
+                .GridView_Pager td a {
+                    color: #FFFFFF;
+                    font-weight: normal;
+                }
+
+        .GridView_Header {
+            color: #FFFFFF;
+            background-color: #025239;
+            border: solid 1px #c0c0c0;
+        }
+
+            .GridView_Header th {
+                padding: 3px 7px;
+            }
+
+            .GridView_Header a {
+                color: #fff;
+            }
+
+        .GridView_Alt {
+            background-color: #dce3f1;
+            border: solid 1px #c0c0c0;
+        }
+
+            .GridView_Alt td {
+                padding: 3px 7px;
+                border: 0px;
+            }
+
+        /* link button styles */
+        .magnifier {
+            background: url('public/images/magnifier.png') no-repeat;
+            padding: 0 0 1px 17px;
+        }
+
+        .addcourse {
+            background: url('public/images/add.png') no-repeat;
+            padding: 0 0 1px 20px;
+        }
+
+        .editcourse {
+            background: url('public/images/pencil.png') no-repeat;
+            padding: 0 0 1px 20px;
+        }
+
+        .addmeeting {
+            background: url('public/images/calendar_add.png') no-repeat;
+            padding: 0 0 1px 20px;
+        }
+
+        .editmeeting {
+            background: url('public/images/calendar_edit.png') no-repeat;
+            padding: 0 0 1px 20px;
+        }
+
+        .deletemeeting {
+            background: url('public/images/calendar_delete.png') no-repeat;
+            padding: 0 0 1px 20px;
+        }
+
+        .deletefaculty {
+            background: url('public/images/user_delete.png') no-repeat;
+            padding: 0 0 1px 20px;
+        }
+
+        .addfaculty {
+            background: url('public/images/user_add.png') no-repeat;
+            padding: 0 0 1px 20px;
+        }
+
+        .deletecourse {
+            background: url('public/images/delete.png') no-repeat;
+            padding: 0 0 1px 20px;
+        }
+
+        .addcoreq {
+            background: url('public/images/brick_add.png') no-repeat;
+            padding: 0 0 1px 20px;
+        }
+
+        .deletecoreq {
+            background: url('public/images/brick_delete.png') no-repeat;
+            padding: 0 0 1px 20px;
+        }
+
+        .addxlink {
+            background: url('public/images/plugin_add.png') no-repeat;
+            padding: 0 0 1px 20px;
+        }
+
+        .deletexlink {
+            background: url('public/images/plugin_delete.png') no-repeat;
+            padding: 0 0 1px 20px;
+        }
+
+        .ViewPendingChanges {
+            background: url('public/images/icon_redirect.gif') no-repeat center right;
+            padding: 0 14px 1px 0;
+            maring-left: 5px;
+        }
+
+        .approve {
+            background: url('public/images/accept.png') no-repeat;
+            padding: 0 0 1px 20px;
+        }
+
+        .ignore {
+            background: url('public/images/delete.png') no-repeat;
+            padding: 0 0 1px 20px;
+        }
+
+        /*GLOBAL NAV*/
+        ul#gnav {
+            list-style-type: none;
+            margin: 5px 0px 0px 0px;
+            padding: 0px;
+            text-align: right;
+            height: auto;
+        }
+
+            ul#gnav li {
+                display: inline;
+            }
+
+            ul#gnav a:link, ul#gnav a:visited {
+                padding: 4px 10px 4px 10px;
+                clear: none;
+                margin-left: 5px;
+                color: #fff;
+                text-decoration: none;
+                background-color: #427D42;
+                border-right: 1px solid #77BB77;
+                border-top: 1px solid #77BB77;
+                border-left: 1px solid #77BB77;
+                font-weight: bold;
+                font-size: 8pt;
+                float: right;
+            }
+
+            ul#gnav a:hover {
+                background-color: #77BB77;
+            }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            <Services>
+                <asp:ServiceReference Path="~/AutoSuggest.asmx" />
+            </Services>
+        </asp:ScriptManager>
+        <table cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center">
+                    <div id="headcontent">
+                        <asp:Image runat="server" ID="Image1" ImageUrl="~/public/images/mslogo.gif" ToolTip=""
+                            AlternateText="" Style="float: left; vertical-align: bottom;" />
+                        <asp:Image runat="server" ID="Image2" ImageUrl="~/public/images/dclogo.gif" ToolTip=""
+                            AlternateText="" Style="float: right; vertical-align: bottom;" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <div id="globalNav">
+                        <ul id="gnav">
+                            <li>
+                                <asp:HyperLink ID="HyperLink1" NavigateUrl="~/Report.aspx" runat="server">Reports</asp:HyperLink></li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink6" NavigateUrl="~/processscreen.aspx" runat="server">Final Processing</asp:HyperLink></li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink5" NavigateUrl="~/registar.aspx" runat="server">Registar</asp:HyperLink></li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink2" NavigateUrl="~/NeedsApproval.aspx" runat="server">Division Chairs</asp:HyperLink></li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink4" NavigateUrl="~/Users/AddDivChair.aspx" runat="server">Users and Assignments</asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink ID="HyperLink3" NavigateUrl="~/default.aspx" runat="server">Main Menu</asp:HyperLink>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <div id="breadcrumbs">
+                        <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                        </asp:SiteMapPath>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="background: #FFFFFF;">
+                    <div id="pagecontent">
+                        <div id="maincontent">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <div id="footcontent">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

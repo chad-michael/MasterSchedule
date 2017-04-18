@@ -1,0 +1,162 @@
+﻿.TopGroup
+{
+  background-color:#5A6B7D; 
+  border:1px #8394AC solid; 
+  cursor:default; 
+}
+
+.MenuGroup
+{
+  background-color:#F5F5F5;
+  border:1px #4E5358 solid; 
+  border-style:solid;
+  cursor:pointer; 
+}
+
+.TopMenuItem
+{
+  background-color:#5A6B7D; 
+  color:white; 
+  font-family:tahoma; 
+  font-size:12px; 
+  border:1px #5A6B7D solid;
+  cursor:default; 
+}
+
+.TopMenuItemHover 
+{
+  background-color:#C2C5C8; 
+  background-image: url(/public/delta/images/top_item_bg.gif);
+  color:white; 
+  font-family:tahoma; 
+  font-size:12px; 
+  border:1px #DFE2E5 solid;
+  cursor:pointer; 
+}
+
+.MenuItem
+{
+  border: 1px solid #F5F5F5; 
+  color:#00025C;
+  font-family:tahoma; 
+  font-size:11px; 
+  cursor:default; 
+}
+
+.MenuItemHover 
+{
+  background-color:#E4F1F7; 
+  background-image: url(/public/delta/images/item_bg.gif);
+  color:#00025C;
+  border: 1px solid #AADAED; 
+  font-family:tahoma; 
+  font-size:11px; 
+  cursor:pointer; 
+}
+
+.EmptyMenuItem
+{
+  border: 1px solid #F5F5F5; 
+  color:#00025C;
+  font-family:tahoma; 
+  font-size:11px; 
+  cursor:default; 
+}
+
+.EmptyMenuItemHover 
+{
+  background-color:#E4F1F7; 
+  background-image: url(/public/delta/images/item_bg.gif);
+  color:#00025C;
+  border: 1px solid #AADAED; 
+  font-family:tahoma; 
+  font-size:11px; 
+  cursor:default; 
+}
+
+.MenuBreak
+{
+  background-image:url(/public/delta/images/break_bg.gif);
+  width:100%;
+  height:2px;
+}
+
+
+.SubGroup
+{
+    background-color: #F4F8E7;
+    margin-left:5px;
+}   
+
+.Item
+{
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #A7DAD0;
+    background-color: #F4F8E7;
+    font-family: verdana;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.ItemH
+{
+    background-color: #F5E9CA;
+    color:black; 
+    font-family:verdana; 
+    font-size:12px; 
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #A7DAD0;
+    cursor:pointer;
+}
+
+.ItemExp
+{
+      background-color: #F5E9CA;
+  color:black; 
+  font-family:verdana; 
+  font-size:12px; 
+      border-style: none none solid none;
+    border-width: 1px;
+    border-color: #A7DAD0;
+  cursor:pointer;
+}
+
+
+
+.EmptyItem
+{
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #A7DAD0;
+    background-color: #F4F8E7;
+    font-family: verdana;
+    font-size: 12px;
+    cursor: default;
+}
+
+.EmptyItemH
+{
+    background-color: #F5E9CA;
+    color:black; 
+    font-family:verdana; 
+    font-size:12px; 
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #A7DAD0;
+    cursor:default;
+}
+
+.EmptyItemExp
+{
+      background-color: #F5E9CA;
+        color:black; 
+        font-family:verdana; 
+    font-size:12px; 
+      border-style: none none solid none;
+    border-width: 1px;
+    border-color: #A7DAD0;
+  cursor:default;
+}
+

@@ -1,0 +1,42 @@
+﻿.spotlightitem 
+{
+background:#F4F8E7 url(/images/system/rsb_swoosh.gif) no-repeat scroll 0pt 100%;
+margin-bottom:15px;
+padding:0pt 10px 30px 20px;
+width:202px;
+}
+
+.h3header
+{
+color:#013826;
+font-size:13.5pt;
+font-weight:normal;
+padding:10px 0pt;
+}
+
+.spotlightitem img
+{
+float:left;
+margin:0pt 10px 10px 0pt;
+}
+
+.spotlightitem  p
+{
+font-size:9pt;
+line-height:1.2em;
+margin-bottom:10px;
+}
+
+.spotlightitem a:link, .spotlightitem a:visited 
+{
+color:#484878;
+float:right;
+font-size:9pt;
+font-weight:bold;
+}
+
+.rightcol_button {
+height:121px;
+margin:0pt auto 15px;
+width:190px;
+}

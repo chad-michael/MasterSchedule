@@ -1,0 +1,32 @@
+﻿
+.cell
+{
+border:1px solid #CCCCCC;
+padding:10px;
+text-align:center;
+}
+
+.cell:hover
+{
+    background-color: #DDEEFF;
+}
+
+element.style 
+{
+border-collapse:collapse;
+}
+.alphabet 
+{
+border-collapse:collapse;
+}
+
+.selected 
+{
+background-color:#000080;
+border:1px solid #CCCCCC;
+padding:10px;
+text-align:center;
+color: White;
+}
+
+

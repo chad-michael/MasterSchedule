@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MasterSchedule" Class="MasterScheduleDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=sql05dev;Initial Catalog=MasterSchedule;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MasterScheduleConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.MeetingCenterContact" Member="MeetingCenterContacts">
+    <Type Name="MeetingCenterContact">
+      <Column Name="MeetingCenterContactID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MeetingCenter" Type="System.String" DbType="NVarChar(70) NOT NULL" CanBeNull="false" />
+      <Column Name="ContactIDNO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SendMessageOnLogApproval" Member="SendMessageOnLogApprovals">
+    <Type Name="SendMessageOnLogApproval">
+      <Column Name="SendMessageOnLogApprovalID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LogID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CampusID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DateCompleted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetMeetingCenterEmail" Method="GetMeetingCenterEmail">
+    <Parameter Name="MeetingCenter" Parameter="meetingCenter" Type="System.String" DbType="NVarChar(70)" />
+    <ElementType Name="GetMeetingCenterEmailResult">
+      <Column Name="DeltaEmail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="Home"  description="Home Page / Select a Course">
+    <siteMapNode url="~/ViewSection.aspx" title="Course Details"  description="Shows detailed information about a course/section." />
+    <siteMapNode url="~/AddCourse.aspx" title="Add New Course"  description="User form to submit a new course/section." />
+    <siteMapNode url="~/NeedsApproval.aspx" title="Pending Changes"  description="List of changes that a department chair needs to approve or ignore." />
+  </siteMapNode>
+</siteMap>

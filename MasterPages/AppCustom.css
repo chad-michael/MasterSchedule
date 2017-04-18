@@ -1,0 +1,90 @@
+﻿.alphabet
+{
+    border-collapse: collapse;
+}
+.cell
+{
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.selected
+{
+    border: 1px solid #CCCCCC;
+    background-color: #CCFF66;
+    text-align: center;
+    padding: 10px;
+    cursor: default;
+}
+.selected a
+{
+    color: #FFFFFF;
+}
+.unavailable
+{
+    color: #CCCCCC;
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+}
+.small_light_grey
+{
+    font-size: 8pt;
+    color: Gray;
+}
+.medium_light_grey
+{
+    font-size: 9pt;
+    color: Gray;
+}
+.actionbar
+{
+    border: 1px solid #9AC0EF;
+    width: 450px;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #F2F7FD;
+}
+.actionbar a
+{
+    margin-left: 5px;
+    font-size: 10pt;
+}
+.actionbarshort
+{
+    border: 1px solid #9AC0EF;
+    float: none;
+    clear: both;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #F2F7FD;
+}
+.actionbarshort a
+{
+    margin-left: 5px;
+    font-size: 10pt;
+}
+.lnkSearch
+{
+    background: url('../admin/images/zoom.png') no-repeat;
+    padding: 1px 0 2px 20px;
+}
+.lnkDeleteRecord
+{
+    background: url('../admin/images/delete.png') no-repeat;
+    padding: 1px 0 2px 20px;
+}
+.lnkEditRecord
+{
+    background: url('../admin/images/pencil.png') no-repeat;
+    padding: 1px 0 2px 20px;
+}
+.lnkAddRecord
+{
+    background: url('../admin/images/add.png') no-repeat;
+    padding: 0 0 1px 20px;
+}

@@ -1,0 +1,108 @@
+﻿.TopGroup
+{
+     width:1006px;
+	 height:33px;         
+	 background:url('/images/system/deltaglobalnav.gif') no-repeat 0 0;
+}
+
+.MenuGroup
+{
+    background-color: #F5F5F5;
+    border: 1px #4E5358 solid;
+    border-style: solid;
+    cursor: default;
+}
+
+
+.MenuItem
+{
+    border: 1px solid #F5F5F5;
+    color: #00025C;
+    font-family: tahoma;
+    font-size: 11px;
+    cursor: default;
+}
+
+.MenuItemHover
+{
+    background-color: #E4F1F7;
+    background-image: url(/app_data/images/item_bg.gif);
+    color: #00025C;
+    border: 1px solid #AADAED;
+    font-family: tahoma;
+    font-size: 11px;
+    cursor: default;
+}
+
+.MenuBreak
+{
+    background-image: url(/app_data/images/break_bg.gif);
+    width: 100%;
+    height: 2px;
+}
+
+
+
+
+/* MAIN TOP NAVIGATION */
+
+
+.SearchTopMenuItem
+{
+    width: 145px;
+    background: url( '/images/system/deltaglobalnav.gif' ) no-repeat -94px 0;
+    left: 0;
+}
+.SearchTopMenuItemHover
+{
+    background: url( '/images/system/deltaglobalnav.gif' ) no-repeat -94px -33px;
+}
+
+.ProgramsTopMenuItem
+{
+    width: 152px;
+    background: url( '/images/system/deltaglobalnav.gif' ) no-repeat -239px 0;
+    left: 145px;
+}
+
+.ProgramsTopMenuItemHover
+{
+    background: url( '/images/system/deltaglobalnav.gif' ) no-repeat -94px -33px;
+}
+
+
+.AETopMenuItem
+{
+    width: 180px;
+    background: url( '/images/system/deltaglobalnav.gif' ) no-repeat -391px 0;
+    left: 297px;
+}
+
+.AETopMenuItemHover
+{
+    background: url( '/images/system/deltaglobalnav.gif' ) no-repeat -391px -33px;
+}
+
+.FinancialTopMenuItem
+{
+    width: 159px;
+    background: url( '/images/system/deltaglobalnav.gif' ) no-repeat -571px 0;
+    left: 477px;
+}
+
+.FinancialTopMenuItemHover
+{
+    background: url( '/images/system/deltaglobalnav.gif' ) no-repeat -571px -33px;
+}
+
+.ProfileTopMenuItem
+{
+    width: 154px;
+    background: url( '/images/system/deltaglobalnav.gif' ) no-repeat -730px 0;
+    left: 636px;
+}
+
+.ProfileTopMenuItemHover
+{
+    background: url( '/images/system/deltaglobalnav.gif' ) no-repeat -730px -33px;
+}

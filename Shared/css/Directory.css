@@ -1,0 +1,102 @@
+﻿.img {
+border:1px solid #B9B9D3;
+margin-left:5px;
+margin-right:5px;
+padding:5px;
+}
+
+
+.contactcard
+{
+    border: 1px solid #CCCCCC;
+    padding: 15px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+
+.small .contactcard
+{
+    width:315px;
+    border: 1px solid #CCCCCC;
+    padding: 15px;
+    margin:5px;
+    float:left;
+}
+
+.small .contactdetial
+{
+   margin-left:0px;
+   float:none;
+}
+
+.small .contactmain 
+{
+    margin-left:15px;
+    float:none;
+}
+
+
+.contactimage
+{
+    background-color: #FFFFFF;
+    float: left;
+}
+
+.contacthead
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+}
+.contactbio
+{
+    font-size: 10pt;
+    color: #666666;
+}
+.contactmain
+{
+   
+}
+.contactdetial
+{
+    font-size:9pt;
+    float:right;
+
+}
+
+.contact_detaillist 
+{
+	font-size:9pt;
+}
+
+.contact_detaillist td
+{
+	font-size:9pt;
+}
+
+
+.contact_detaillist a:link, .contact_detaillist a:visited {
+	color:#484878;
+	font-weight:bold;
+	text-decoration:underline;
+        font-size:9pt;
+}
+
+.contact_phone
+{
+    list-style-image: url(/images/linphone.png); 
+    vertical-align: middle;
+}
+
+.contact_email 
+{
+    list-style-image: url(/images/email.png); 
+    vertical-align: middle;
+}
+
+.contact_location 
+{
+    list-style-image: url(/images/linphone.png); 
+    vertical-align: middle;
+}

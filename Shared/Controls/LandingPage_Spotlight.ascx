@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="LandingPage_Spotlight.ascx.cs" Inherits="Shared.Controls._themes_DeltaCollege_Controls_LandingPage_Spotlight" %>
+<asp:PlaceHolder runat="server" ID="pcSpotlightList"></asp:PlaceHolder>

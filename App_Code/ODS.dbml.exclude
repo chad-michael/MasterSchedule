@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ods" Class="ODSDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=ods;Initial Catalog=ods;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="odsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.D04_ODS_COURSE_SECTIONS" Member="D04_ODS_COURSE_SECTIONs">
+    <Type Name="D04_ODS_COURSE_SECTION">
+      <Column Name="COURSE_SECTIONS_ID" Type="System.String" DbType="VarChar(19) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="POS" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ACTIVE_STUDENT_COUNT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="SEC_ACAD_LEVEL" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="ACADEMIC_LEVEL_DESC" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="SEC_CAPACITY" Type="System.Decimal" DbType="Decimal(5,0)" CanBeNull="true" />
+      <Column Name="SEC_CEUS" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="SEC_CIP" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="SEC_COURSE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="COURSE_LEVEL" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="COURSE_LEVEL_DESC" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="SEC_COURSE_NO" Type="System.String" DbType="VarChar(7)" CanBeNull="true" />
+      <Column Name="SEC_CRED_TYPE" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="CREDIT_TYPE_DESC" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="DEPARTMENT_1" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="DEPARTMENT_1_DESC" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="DEPARTMENT_2" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="DEPARTMENT_2_DESC" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="DIVISION_1" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="DIVISION_1_DESC" Type="System.String" DbType="VarChar(35)" CanBeNull="true" />
+      <Column Name="DIVISION_2" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="DIVISION_2_DESC" Type="System.String" DbType="VarChar(35)" CanBeNull="true" />
+      <Column Name="DROPPED_STUDENT_COUNT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="SEC_END_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SEC_LOCATION" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="LOCATION_DESC" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="SEC_MIN_CRED" Type="System.Decimal" DbType="Decimal(9,5)" CanBeNull="true" />
+      <Column Name="SEC_MIN_ENROLL" Type="System.Decimal" DbType="Decimal(5,0)" CanBeNull="true" />
+      <Column Name="SEC_MAX_CRED" Type="System.Decimal" DbType="Decimal(9,5)" CanBeNull="true" />
+      <Column Name="SEC_NAME" Type="System.String" DbType="VarChar(21)" CanBeNull="true" />
+      <Column Name="SEC_NO" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="SEC_SHORT_TITLE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="SEC_REPORTING_TERM" Type="System.String" DbType="VarChar(7)" CanBeNull="true" />
+      <Column Name="SCHOOL_1" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="SCHOOL_1_DESC" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="SCHOOL_2" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="SCHOOL_2_DESC" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="SEC_START_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SEC_CURRENT_STATUS" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="CURRENT_STATUS_DESC" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="STATUS_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SEC_SUBJECT" Type="System.String" DbType="VarChar(7)" CanBeNull="true" />
+      <Column Name="SUBJECT_DESC" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="SEC_TERM" Type="System.String" DbType="VarChar(7)" CanBeNull="true" />
+      <Column Name="SEC_TOPIC_CODE" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="TOPIC_DESC" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="SEC_SCHED_TYPE" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="SEC_CONTACT_HOURS" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="SEC_PRINTED_COMMENTS" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SEC_CLOCK_HOURS" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="SEC_R2_EVENT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SEC_ACTIVE_STUDENT_COUNT" Type="System.Decimal" DbType="Decimal(6,0)" CanBeNull="true" />
+      <Column Name="D04_SEC_ACTIVE_ENR" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="SEC_PORTAL_SITE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SEC_PURPOSE" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="SEC_XLIST" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

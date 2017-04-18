@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Note: As an alternative to hand editing this file you can use the 
+    web admin tool to configure settings for your application. Use
+    the Website->Asp.Net Configuration option in Visual Studio.
+    A full list of settings and comments can be found in 
+    machine.config.comments usually located in 
+    \Windows\Microsoft.Net\Framework\v2.x\Config 
+-->
+<configuration>
+	<configSections>
+		<sectionGroup name="system.web.extensions" type="System.Web.Configuration.SystemWebExtensionsSectionGroup, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+			<sectionGroup name="scripting" type="System.Web.Configuration.ScriptingSectionGroup, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+				<section name="scriptResourceHandler" type="System.Web.Configuration.ScriptingScriptResourceHandlerSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication" />
+				<sectionGroup name="webServices" type="System.Web.Configuration.ScriptingWebServicesSectionGroup, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+					<section name="jsonSerialization" type="System.Web.Configuration.ScriptingJsonSerializationSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="Everywhere" />
+					<section name="profileService" type="System.Web.Configuration.ScriptingProfileServiceSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication" />
+					<section name="authenticationService" type="System.Web.Configuration.ScriptingAuthenticationServiceSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication" />
+					<section name="roleService" type="System.Web.Configuration.ScriptingRoleServiceSection, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" requirePermission="false" allowDefinition="MachineToApplication" />
+				</sectionGroup>
+			</sectionGroup>
+		</sectionGroup>
+		<section name="microsoft.identityModel" type="Microsoft.IdentityModel.Configuration.MicrosoftIdentityModelSection, Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+	</configSections>
+	<appSettings>
+		<add key="EmailAdmin" value="webadmin@delta.edu" />
+		<!--email address of the person who gets the approved changes, leave blank if no one should get this email-->
+		<add key="EmailFrom" value="master.schedule@delta.edu" />
+		<!--email address the master schedule application will use as the "From" address-->
+		<add key="EmailHost" value="exchmail.delta.edu" />
+		<!--mail server ip-->
+		<add key="EmailPort" value="25" />
+		<!--mail server port-->
+		<add key="EmailUsername" value="" />
+		<!--if the email server requires authentication use this username, leave blank for no authentication-->
+		<add key="EmailPassword" value="" />
+		<!--if the email server requires authentication use this password-->
+		<add key="edu.delta.deltanet.autosuggest" value="https://apps.delta.edu/servicecenter/autosuggest.asmx" />
+		<add key="DefaultServer" value="LDAP://DC1/DC=delta,DC=edu" />
+		<add key="DefaultDomain" value="delta" />
+		<add key="ApplicationID" value="c80667d7-af0d-430f-b6f1-2a22db3bf844" />
+		<add key="AdminAccess" value="Web1_HTML|anthonywillard|chadmichael" />
+		<add key="AppAccess" value="Web1_HTML|DeltaNet_Users|webdev_html|domain_users" />
+	</appSettings>
+	<connectionStrings>
+		<add name="DeltaNetSQL" connectionString="Data Source=sql3, 20149;Initial Catalog=DeltaNetSQL;Integrated Security=True" providerName="System.Data.SqlClient" />
+		<add name="MasterSchedule" connectionString="Data Source=sql;Initial Catalog=MasterSchedule;Integrated Security=True" providerName="System.Data.SqlClient" />
+		<add name="CRP" connectionString="Data Source=sql;Initial Catalog=CRP;Integrated Security=True" providerName="System.Data.SqlClient" />
+		<add name="ERPConnectionString" connectionString="Data Source=sql;Initial Catalog=ERP;Integrated Security=True" providerName="System.Data.SqlClient" />
+		<add name="ERPConnectionString1" connectionString="Data Source=sql;Initial Catalog=ERP;Integrated Security=True" providerName="System.Data.SqlClient" />
+		<add name="CRPConnectionString" connectionString="Data Source=sql;Initial Catalog=CRP;Integrated Security=True" providerName="System.Data.SqlClient" />
+		<add name="MasterScheduleConnectionString" connectionString="Data Source=sql;Initial Catalog=MasterSchedule;Integrated Security=True" providerName="System.Data.SqlClient" />
+		<add name="odsConnectionString" connectionString="Data Source=ods;Initial Catalog=ods;Integrated Security=True" providerName="System.Data.SqlClient" />
+	</connectionStrings>
+	<system.web>
+		<!-- 
+            Set compilation debug="true" to insert debugging 
+            symbols into the compiled page. Because this 
+            affects performance, set this value to true only 
+            during development.
+        -->
+		<compilation debug="true">
+			<assemblies>
+				<add assembly="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+				<add assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+				<add assembly="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+				<add assembly="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+				<add assembly="System.Data.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+				<add assembly="Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+			</assemblies>
+		</compilation>
+		<!--
+            The <authentication> section enables configuration 
+            of the security authentication mode used by 
+            ASP.NET to identify an incoming user. 
+        -->
+		<!--
+		<authentication mode="Forms">
+			<forms loginUrl="logon.aspx" name="adAuthCookie" path="/" timeout="20" />
+		</authentication>
+		-->
+		<authentication mode="None" />
+		<authorization>
+			<deny users="?" />
+			<allow users="*" />
+		</authorization>
+		<customErrors mode="Off" />
+		<pages>
+			<controls>
+				<add tagPrefix="ComponentArt" namespace="ComponentArt.Web.UI" assembly="ComponentArt.Web.UI" />
+				<add tagPrefix="asp" namespace="System.Web.UI" assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+				<add tagPrefix="asp" namespace="System.Web.UI.WebControls" assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+			</controls>
+		</pages>
+		<httpHandlers>
+			<remove verb="*" path="*.asmx" />
+			<add verb="*" path="*.asmx" validate="false" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+			<add verb="*" path="*_AppService.axd" validate="false" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+			<add verb="GET,HEAD" path="ScriptResource.axd" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" validate="false" />
+		</httpHandlers>
+		<httpModules>
+			<add name="ScriptModule" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+		</httpModules>
+	</system.web>
+	<system.codedom>
+		<compilers>
+			<compiler language="c#;cs;csharp" extension=".cs" warningLevel="4" type="Microsoft.CSharp.CSharpCodeProvider, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+				<providerOption name="CompilerVersion" value="v3.5" />
+				<providerOption name="WarnAsError" value="false" />
+			</compiler>
+			<compiler language="vb;vbs;visualbasic;vbscript" extension=".vb" warningLevel="4" type="Microsoft.VisualBasic.VBCodeProvider, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+				<providerOption name="CompilerVersion" value="v3.5" />
+				<providerOption name="OptionInfer" value="true" />
+				<providerOption name="WarnAsError" value="false" />
+			</compiler>
+		</compilers>
+	</system.codedom>
+	<!-- 
+        The system.webServer section is required for running ASP.NET AJAX under Internet
+        Information Services 7.0.  It is not necessary for previous version of IIS.
+    -->
+	<system.webServer>
+		<validation validateIntegratedModeConfiguration="false" />
+		<modules runAllManagedModulesForAllRequests="true">
+			<remove name="ScriptModule" />
+			<add name="ScriptModule" preCondition="managedHandler" type="System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+			<add name="SessionAuthenticationModule" type="Microsoft.IdentityModel.Web.SessionAuthenticationModule, Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" preCondition="managedHandler" />
+			<add name="WSFederationAuthenticationModule" type="Microsoft.IdentityModel.Web.WSFederationAuthenticationModule, Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" preCondition="managedHandler" />
+		</modules>
+		<handlers>
+			<remove name="WebServiceHandlerFactory-Integrated" />
+			<remove name="ScriptHandlerFactory" />
+			<remove name="ScriptHandlerFactoryAppServices" />
+			<remove name="ScriptResource" />
+			<add name="ScriptHandlerFactory" verb="*" path="*.asmx" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+			<add name="ScriptHandlerFactoryAppServices" verb="*" path="*_AppService.axd" preCondition="integratedMode" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+			<add name="ScriptResource" preCondition="integratedMode" verb="GET,HEAD" path="ScriptResource.axd" type="System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+		</handlers>
+	</system.webServer>
+	<runtime>
+		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1" appliesTo="v2.0.50727"><dependentAssembly>
+				<assemblyIdentity name="System.Web.Extensions" publicKeyToken="31bf3856ad364e35" />
+				<bindingRedirect oldVersion="1.0.0.0-1.1.0.0" newVersion="3.5.0.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="System.Web.Extensions.Design" publicKeyToken="31bf3856ad364e35" />
+				<bindingRedirect oldVersion="1.0.0.0-1.1.0.0" newVersion="3.5.0.0" />
+			</dependentAssembly>
+		</assemblyBinding></runtime>
+  <location path="Users/ManageCampusContacts.aspx">
+    <system.web>
+      <authorization>
+	  <!--
+        <allow roles="Web1_HTML"></allow>
+        <allow users="DELTA\richardzeien"></allow>
+		<allow users="DELTA\ryanmccracken"></allow>
+		<allow users="DELTA\davewallace"></allow>
+		<allow users="DELTA\carlmitch"></allow>
+		<allow users="DELTA\scottcrosby"></allow>
+		<allow users="DELTA\michaelmccloskey" />
+        <deny users="*"></deny>
+		-->
+      </authorization>
+    </system.web>
+  </location>  
+  <microsoft.identityModel>
+	<service>
+	<certificateValidation certificateValidationMode="None" />
+		<federatedAuthentication>
+			<wsFederation passiveRedirectEnabled="true" issuer="https://mainadfs.delta.edu/adfs/ls/" realm="https://apps.delta.edu/masterschedule/" reply="https://apps.delta.edu/masterschedule/" requireHttps="true" />
+			<cookieHandler requireSsl="false" />
+		</federatedAuthentication>
+		<securityTokenHandlers>
+			<securityTokenHandlerConfiguration>
+			<audienceUris>
+				<add value="https://apps.delta.edu/masterschedule" />
+			</audienceUris>
+			<issuerNameRegistry type="Microsoft.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry, Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+				<trustedIssuers>
+					<add thumbprint="cdefd892a4e382c670cabfbc4be3a9dfdcd1acdc" name="https://mainadfs.delta.edu/adfs/services/trust" />
+				</trustedIssuers>
+			</issuerNameRegistry>
+
+			</securityTokenHandlerConfiguration>
+		</securityTokenHandlers>
+	</service>
+</microsoft.identityModel>
+</configuration>

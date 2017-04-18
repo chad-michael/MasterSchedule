@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="ERP" Class="ERPDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=sql;Initial Catalog=ERP;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ERPConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Bios" Member="Bios">
+    <Type Name="Bio">
+      <Column Name="IDNO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FirstNM" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="LastNM" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="HomeAddress" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HomeZIP" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="HomePhone" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Association Name="Bio_UName" Member="UName" OtherKey="IDNO" Type="UName" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UNames" Member="UNames">
+    <Type Name="UName">
+      <Column Name="IDNO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Usernames" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="DeltaEmail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Bio_UName" Member="Bio" ThisKey="IDNO" Type="Bio" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>

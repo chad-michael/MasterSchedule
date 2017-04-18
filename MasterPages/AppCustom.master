@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Shared/Delta_2Col_Inner.master" AutoEventWireup="true"
+    CodeFile="AppCustom.master.cs" Inherits="MasterPages.MasterPages_AppCustom" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="PageHeaderTitle" runat="Server">
+    <asp:ContentPlaceHolder runat="server" ID="PageHeaderTitle">
+        <asp:Label runat="server" ID="lblPageTitle" Text="Master Schedule Login" />
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<%--<asp:Content ID="Content3" ContentPlaceHolderID="lsb" runat="Server">
+    <asp:ContentPlaceHolder ID="lsb" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>--%>
+<%--<asp:Content ID="Content4" ContentPlaceHolderID="crumbs" runat="Server">
+    <asp:ContentPlaceHolder runat="server" ID="crumbs">
+    </asp:ContentPlaceHolder>
+</asp:Content>--%>
+<asp:Content ID="Content5" ContentPlaceHolderID="rsbContent" runat="Server">
+    <asp:ContentPlaceHolder runat="server" ID="rsbContent">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content6" ContentPlaceHolderID="contentMain" runat="Server">
+    <asp:ContentPlaceHolder runat="server" ID="contentMain">
+    </asp:ContentPlaceHolder>
+</asp:Content>

@@ -1,0 +1,148 @@
+﻿.modalwindow
+{
+	background: #FFFFFF;
+	padding: 15px;
+	max-width: 600px;
+	max-height: 500px;
+	overflow: auto;
+	z-index:99;
+	position:fixed;
+}
+
+.modalbg {
+    background: url('images/modalbg.png');
+    z-index:10000;
+    background-color:white;
+    filter:alpha(opacity=70);
+    opacity:0.7;
+}
+
+.modalwindow h1,
+.modalwindow h2,
+.modalwindow h3 {
+    font-size: 15pt;
+    padding: 0px;
+    margin: 0px;
+}
+
+.blackheader
+{
+    background: url('images/BlackGradient.png') repeat-x center bottom;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-color: #ebebeb;
+    border-right-color: #ebebeb;
+    border-left-color: #ebebeb;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #c7c7c7;
+    color: #ffffff;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+}
+
+.formHeaderContainers
+{
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-color: #ebebeb;
+    border-right-color: #ebebeb;
+    border-left-color: #ebebeb;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #c7c7c7;
+    color: #000000;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    background: url('images/grad.png') repeat-x center bottom;
+}
+
+.SiteWidgetContainer
+{
+	float: left;
+	margin: 10px;
+
+	width: 220px;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.SiteWidget h2
+{
+	margin-top: -3px;
+	margin-bottom: -3px;
+}
+
+.clr
+{
+background:transparent none repeat scroll 0%;
+clear:both;
+height:auto;
+margin:0pt;
+min-height:0pt;
+padding:0pt;
+width:auto;
+}
+
+.image_ss
+{
+	background: url( 'images/promo_210x80.gif' ) no-repeat;
+	height: 104px;
+	width: 220px;
+	margin: 0pt 0pt 5px;
+	padding: 5px 0pt 0pt;
+
+	text-align: center;
+}
+
+.gridBG
+{   background-image: url('images/bg35.png');
+    background-repeat: repeat-x; }
+
+.gridBG TD{   background-image: url('images/bg35.png');
+    background-repeat: repeat-x; }
+
+    .button
+    {
+        background:transparent url('images/buttonbg.gif') repeat scroll 0%;
+border:1px solid #5C788E;
+color:#555555;
+font-family:Verdana,Tahoma,Arial;
+font-size:8pt;
+padding:3px 6px;
+vertical-align:middle;
+    }
+
+/************ Example Callout Related Styles ***********************/
+
+.exCallout
+{
+    border-right: #696969 1px solid;
+    border-top: #696969 1px solid;
+    border-left: #696969 1px solid;
+    border-bottom: #696969 1px solid;
+    background-color: #ffffe0;
+    padding: 5px;
+    margin-top: 4px;
+    margin-left:4px;
+}
+
+.formLayout
+{
+    border: solid, 1px black;
+    padding: 5px;
+}

@@ -1,0 +1,137 @@
+﻿.flyoutPopup
+{
+    background-color: #ffffff;
+    border: solid 1px silver;
+    padding: 10px;
+}
+
+.flyoutPopup h4
+{
+	    font-weight:bold;
+	    color:#000;
+	    font-size:12pt;
+}
+
+.list
+{
+    width: 160px;
+    padding-left: 10px;
+    margin-top:5px;
+    margin-bottom:7px;
+}
+
+.listitem
+{
+    font-family: Verdana;
+    font-size: 8pt;
+    color: black;
+    text-decoration: none;
+    margin-top: 4px;
+}
+a.listitem:visited
+{
+    font-family: Verdana;
+    font-size: 8pt;
+    color: black;
+    text-decoration: none;
+}
+a.listitem:hover
+{
+    font-family: Verdana;
+    font-size: 8pt;
+    color: black;
+    text-decoration: none;
+}
+a.mlink:link
+{
+    font-family: Tahoma;
+    font-size: 8pt;
+    color: white;
+    text-decoration: none;
+}
+a.mlink:visited
+{
+    font-family: Tahoma;
+    font-size: 8pt;
+    color: white;
+    text-decoration: none;
+}
+a.mlink:hover
+{
+    font-family: Tahoma;
+    font-size: 8pt;
+    color: white;
+    text-decoration: none;
+}
+
+
+.audiencepop ul {
+	list-style:none;
+	display:inline;
+}
+.audiencepop li {
+	
+	vertical-align:bottom;
+}
+
+.audiencepop li a:link,
+.audiencepop li a:visited {
+	 color:#000;
+	 font-size:10pt;
+	 width:154px;
+	 height:24px;
+	 margin:0 3px 0 0;
+	 display:block;
+	 padding:10px 0 0 45px;
+	 font-weight:bold;
+	 vertical-align:bottom;
+}
+.audiencepop li#future a:link,
+.audiencepop li#future a:visited {
+	 background:url('/images/system/aud_future.gif') no-repeat 0 0;	
+	 text-decoration:none;
+}
+.audiencepop li#future a:hover {
+	background:url('/images/system/aud_future.gif') no-repeat 0 -34px;	
+}
+.audiencepop li#parents a:link,
+.audiencepop li#parents a:visited {
+	 background:url('/images/system/aud_parents.gif') no-repeat 0 0;	
+	 text-decoration:none;
+}
+.audiencepop li#parents a:hover {
+	background:url('/images/system/aud_parents.gif') no-repeat 0 -34px;	
+}
+.audiencepop li#business a:link,
+.audiencepop li#business a:visited {
+	 background:url('/images/system/aud_business.gif') no-repeat 0 0;	
+	 text-decoration:none;
+}
+.audiencepop li#business a:hover {
+	background:url('/images/system/aud_business.gif') no-repeat 0 -34px;	
+}
+.audiencepop li#current a:link,
+.audiencepop li#current a:visited {
+	 background:url('/images/system/aud_current.gif') no-repeat 0 0;	
+	 text-decoration:none;
+}
+.audiencepop li#current a:hover {
+	background:url('/images/system/aud_current.gif') no-repeat 0 -34px;	
+}
+.audiencepop li#alumni a:link,
+.audiencepop li#alumni a:visited {
+	 background:url('/images/system/aud_alumni.gif') no-repeat 0 0;	
+	 text-decoration:none;
+}
+.audiencepop li#alumni a:hover {
+	background:url('/images/system/aud_alumni.gif') no-repeat 0 -34px;	
+}
+.audiencepop li#community a:link,
+.audiencepop li#community a:visited {
+	 background:url('/images/system/aud_community.gif') no-repeat 0 0;	
+	 text-decoration:none;
+}
+.audiencepop li#community a:hover {
+	background:url('/images/system/aud_community.gif') no-repeat 0 -34px;	
+}
+
